@@ -1,3 +1,11 @@
 /* 
     General Styles
 */
+
+.contactImage {
+    height: 120px;
+}
+
+.cardAligment {
+    align-items: center;
+}
