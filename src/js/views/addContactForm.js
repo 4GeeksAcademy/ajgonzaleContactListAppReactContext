@@ -33,7 +33,6 @@ const AddContactForm = props => {
 			"phone": phone,
 			"address": address
 		}
-
 		actions.saveContact(contactAux);
 	}
 
@@ -57,7 +56,7 @@ const AddContactForm = props => {
 					<input type="text" className="form-control" id="formAddress" placeholder="Enter address" value={address} onChange={(e) => setAddress(e.target.value)}/>
 				</div>
 				<Link to="/">
-					<button className="btn btn-primary w-100" onClick={e=>saveContact}>Save</button>
+					<button className="btn btn-primary w-100" onClick={e=>{saveContact()}}>Save</button>
 					or get back to contacts.
 				</Link>
 			</form>

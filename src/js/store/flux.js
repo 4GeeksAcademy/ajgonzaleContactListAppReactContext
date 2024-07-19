@@ -132,7 +132,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					}).then((res) => {
 						return res.json();
 					})
-					.then(data => {	});
+					.then(data => {	
+						getActions().getContactList();
+					});
 				}
 			},
 			deleteContact : (id) => {
